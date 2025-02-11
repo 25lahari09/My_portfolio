@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>My Portfolio</h1>
+            <div class="auth">
+                <input type="email" placeholder="Sign in with email" id="emailInput">
+                <button id="signIn">Sign In</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="profile">
+            <div class="profile-image">
+                <img src="/api/placeholder/300/300" alt="Profile Picture" id="profileImg">
+                <button id="uploadImage" class="upload-btn">
+                    <i class="fas fa-camera"></i> Update Profile Picture
+                </button>
+            </div>
+            <div class="profile-content">
+                <h2 class="profile-name">Your Name</h2>
+                <p class="profile-title">Full Stack Developer</p>
+                    <h3>Resume</h3>
+                <!-- Resume Section -->
+                <section class="resume-section">
+                        <!-- Button to trigger resume upload -->
+                        <button id="uploadResume" class="upload-btn">
+                            <i class="fas fa-file-upload"></i> Upload Resume
+                        </button>
+                    <!-- Dropdown for selecting resume visibility -->
+                    <label for="visibilitySelect" class="visibility-label">Visibility:</label>
+                    <select id="visibilitySelect" class="visibility-dropdown">
+                        <option value="public">Public</option>
+                        <option value="private">Private</option>
+                    </select>
+                    <!-- Display uploaded resume file name -->
+                    <div id="resumeList" class="resume-info">
+                        <span id="uploadedResume" class="resume-filename">No file uploaded</span>
+                    </div>
+                </section>
+
+    <section class="skills">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <button id="addSkill" class="add-btn">
+                    <i class="fas fa-plus"></i> Add Skill
+                </button>
+            </div>
+            <div id="skillsContainer" class="skills-grid"></div>
+        </section>
+
+        <section class="projects">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <button id="addProject" class="add-btn">
+                    <i class="fas fa-plus"></i> Add Project
+                </button>
+            </div>
+            <div id="projectsContainer" class="projects-grid"></div>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
