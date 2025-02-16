@@ -1,2 +1,2 @@
 # My_portfolio
-This describes my profile and my skills 
+Website front end and backend for self service to show case my skills (just like a linkedin )
